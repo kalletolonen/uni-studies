@@ -1,19 +1,13 @@
-1) Aloita kirjoitelma johdannolla. Kirjoita hieman siitä, mikä on oma osaamisesi kurssin aihealueesta. Oletko opiskellut jotakin aiheeseen liittyvää, saanut tietosi ja kokemuksesi harrastepohjalta vai mahdollisesti työssäsi? Kerro tässä johdannossa myös millaisia odotuksia ja oppimistavoitteita sinulla on kurssia kohtaan ja arvioi mitkä ovat suurimpia oppimishaasteita kurssilla.
-2) Katso ensin ainakin luennot "1 Kurssin esittely" ja "2 Sulautetut laitteet"  
+## Harjoitus 1 - TIEA3000 Johdatus sulautettuihin järjestelmiin
 
-Valitse oman mielenkiintosi mukaan jokin alla olevista artikkeleista ja tee siitä n. 4000 merkkin (kansilehti + 2 sivua) mittainen suomenkielinen tiivistelmä. Pyri selvittämään esimerkiksi minkälaiseen ympäristöön IoT-ratkaisuja sovelletaan, mitä ratkaisulla pyritään saavuttamaan, minkälainen ratkaisu on teknisesti jne.
-
-Referaatissa ei tarvitse läpikäydä tiedonsiirtoprotokollia ja yksityiskohtaisesti teknologioita. Pikemminkin kannattaa pysyä yleisellä tasolla ja kuvata mitä tehtiin, miksi, millä tavalla, mitä mitattiin jne.
-
-Palauta työ tähän palautuslaatikkoon pdf-muodossa siten, että siinä on myös kansilehti, jossa nimesi ja harjoituksen numero ja lähdeluettelo, jossa on lähteenä käyttämäsi artikkeli (lähdeluettelon muoto ei ole merkittävä). Palautuslaatikoissa on päällä nk. Lähetä arvioitavaksi -toiminto. Voit siis säilyttää halutessasi keskeneräistä vastausta palautuslaatikossa ja lähettää sen tarkastettavaksi vasta kun se on valmis. Muista siis painaa lähetä arvioitavaksi -nappia kun työ on valmis. 
-
-## Harjoitus 1
+Kalle Tolonen
+02.04.2023
 
 ### Johdanto
 
-Sulautetut laitteet ja IoT-ratkaisut eivät ole minulle tuttuja kehittäjänä. Olen käyttänyt monia sulautettuja laitteita kyllä arjessani, kuten esimerkiksi älykelloa ja älykästä pyykinpesukonetta. Laitteet keihtovat minua ja haluan oppia niistä lisää, sekä oppia myös kehittämän itse laitteita ja niiden ohjelmistoja. Päivätyössäni teen full stack -ohjelmointia, jossa työskennellään paljon datan käsittelyn parissa, luodaan rajapintoja muille sovelluksille ja integroidaan muiden järjestelmien tuottamaa tietoa omaan järjestelmäämme, joka yhdistää sen muihin tietoihin ja tarjoilee taas sitä eteenpäin. Olen myös suorittanut ammattikorkeakoulututkinnon, jossa pääosa opinnoistani liittyi ohjelmistotuotantoon ja digitaalisiin palveluihin, joten koen että minulla on hyvät valmiudet oppia uusia asioita kehitystyön tiimoilta. 
+Sulautetut laitteet ja IoT-ratkaisut eivät ole minulle tuttuja kehittäjänä. Olen käyttänyt monia sulautettuja laitteita kyllä arjessani, kuten esimerkiksi älykelloa ja älykästä pyykinpesukonetta. Laitteet keihtovat minua ja haluan oppia niistä lisää, sekä oppia myös kehittämän itse laitteita ja niiden ohjelmistoja. Päivätyössäni teen full stack -ohjelmointia, jossa työskennellään paljon datan käsittelyn parissa, luodaan rajapintoja muille sovelluksille ja integroidaan muiden järjestelmien tuottamaa tietoa omaan järjestelmäämme, joka yhdistää sen muihin tietoihin ja tarjoilee taas sitä eteenpäin. Olen myös suorittanut ammattikorkeakoulututkinnon, jossa pääosa opinnoistani liittyi ohjelmistotuotantoon ja digitaalisiin palveluihin, joten koen että minulla on hyvät valmiudet oppia uusia asioita kehitystyön tiimoilta. Arduinon tiedän nimeltä ja konseptilta, mutta en ole sellaista vielä kertaakaan käsitellyt edes simulaattorissa, joten siinä on varmasti täysin uusi asia edessä. Uskon kuitenkin, että verkosta löytyy runsaasti materiaalia, jolla sen kanssa pääsee nopeasti alkuun ja "hello world" tuntuu ainakin itselleni olevan se tärkein asia, eli että on olemassa toimiva ympäristö ja joku alkupiste, jossa tietää tekemiensä muutosten vaikuttavan ohjelmistoon.
 
-Oppimistavoitteenani minulla on oppia sulautetuista järjestelmistä ja siitä millaista kehitystyö on niiden parissa konkreettisesti. Työkaveriltani olen kuullut, että se on haasteellista, mutta palkitsevaa. Suurimpia oppimishaasteita ovat varmasti täysin uuden asian parissa työskentely ja siihen tarvittavan ajan raivaaminen kalenterista - siksi tämä karsimiskurssi on koulun kannalta varmasti erinomainen työkalu opiskelijan resurssien ja motivaation selvittämiseksi ennen varsinaisia opintoja.
+Oppimistavoitteenani minulla on oppia sulautetuista järjestelmistä ja siitä millaista kehitystyö on niiden parissa konkreettisesti, sekä oppia kehittämään asioita Arduinolle. Työkaveriltani olen kuullut, että sulautettujen järjestelmien parissa työ on haasteellista, mutta palkitsevaa. Suurimpia oppimishaasteita ovat varmasti täysin uuden asian parissa työskentely ja siihen tarvittavan ajan raivaaminen kalenterista - siksi tämä karsimiskurssi on koulun kannalta varmasti erinomainen työkalu opiskelijan resurssien ja motivaation selvittämiseksi ennen varsinaisia opintoja.
 
 ### Referaatti
 
