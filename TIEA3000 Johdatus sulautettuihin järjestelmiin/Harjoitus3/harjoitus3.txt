@@ -1,0 +1,16 @@
+Harjoitus3
+Kalle Tolonen
+
+1. Minulla meni harjoitusten tekemiseen yksi ilta ja seuraavana aamuna kävin vielä tehtävät läpi ja tein niihin viimeiset viilaukset - noin 5 tuntia kokonaisuudessaan.
+2. Sain toteutettua tehtävät tehtävänannon mukaan.
+3. Opin paljon, keskeytysrutiini tuli uutena asiana - en ole keskeytyksiä käyttänyt työssäni koskaan. Käsitteenä se on toki tuttu. Tehtävissä oli sopiva vaikeutumiskäyrä ensimmäiseen tehtävään nähden. Tällä kertaa kommentoin kaikki koodirivit, mikä tuntui ehkä vähän turhalta, kun on selkeät loogiset rakenteet ja muuttujien nimet ovat itsessään dokumentaatiota. Isoin haaste oli lämpötilasensorin kanssa ja varmaan helpointa olisi ollut lopettaa aikaisemmin ja ratkaista asia nopeasti seuraavana päivänä, kun en saanut siitä ensin mitään muutosta irti. Seuraavalla kerralla selvitän miten se Arduino-simulaattorin sisäinen "osskilloskooppi" toimii, jotta minulle selviää onko vika kytkennöissä vai koodissa.
+
+Tehtävä 3.1:
+https://www.tinkercad.com/things/0cyamhtn7Ne-harjoitus31/editel?sharecode=A_cwhSD-yVtIYrCP_4udZZqnzrK_Ismo97wTRKwLum8
+
+Tehtävä 3.2:
+https://www.tinkercad.com/things/8ZnZbn3vwy9-harjoitus32/editel?sharecode=u6c7eLoWMSb_GkVB8GvISWJqUM66L5NJU2-rt7Sosls
+
+Tehtävä 3.3:
+https://www.tinkercad.com/things/71iflLLrMUW-harjoitus33/editel?sharecode=lxQsj6C2yqqattjbda7z2qnbYa-ZUQBmLCiVXKPzIwQ
+

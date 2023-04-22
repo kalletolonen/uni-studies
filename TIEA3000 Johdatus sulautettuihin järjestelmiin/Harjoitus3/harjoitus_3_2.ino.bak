@@ -5,14 +5,15 @@ int counter = 0; // integer for counter
 // instantly visible to main loop()
 volatile bool ledState = false; //boolean for led state saving
 volatile bool buttonPressed = false; // boolean for button state
-
+volatile long lastInterruptTime = 0; // long for interruption time
 
 void setup() {
   Serial.begin(9600); // init Serial port
   pinMode(greenLed, OUTPUT); // init Pin for led
   pinMode(leftButton, INPUT_PULLUP); //init button
-  // The FALLING param is for registering a downward button stroke
-  attachInterrupt(digitalPinToInterrupt(leftButton), buttonInterrupt, FALLING);
+  // The CHANGE param is for registering a CHANGE for button, ie. it doesn't matter
+  // if the button is on upward or downward motion
+  attachInterrupt(digitalPinToInterrupt(leftButton), buttonInterrupt, CHANGE);
 }
 
 void loop() {
@@ -36,5 +37,11 @@ void setLedState(int led, int state) {
 
 // Interruption routine
 void buttonInterrupt() {
-     buttonPressed = true; // sets buttonpressed true
+  unsigned long interruptTime = millis(); // the current time in milliseconds
+  // Checks whether the interrupt is the first one in over 50ms
+  if (interruptTime - lastInterruptTime > 50) {
+    lastInterruptTime = interruptTime; // sets a variable with new value
+    buttonPressed = true; // sets buttonpressed true
+    
+  }
 }

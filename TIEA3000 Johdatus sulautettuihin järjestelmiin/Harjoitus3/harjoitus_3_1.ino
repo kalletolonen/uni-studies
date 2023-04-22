@@ -1,24 +1,21 @@
-int delayTime = 50;
-int greenLed = 12;
-int leftButton = 3;
-int buttonState = HIGH;
+int greenLed = 12; // declare led pin variable
+int leftButton = 3; // declare button pin variable
 
 void setup()
 {
-  pinMode(greenLed, OUTPUT);
-  pinMode(leftButton, INPUT);
+  pinMode(greenLed, OUTPUT); // init pin for led
+  pinMode(leftButton, INPUT); // init pin for button
 }
 
 void loop()
 {
   // Led is turned on when button is pressed
   if (!isButtonPressed(leftButton)) {
-  	setLedState(greenLed, LOW);
+  	setLedState(greenLed, LOW); // function call with params
   }
   else {
-    setLedState(greenLed, HIGH);
+    setLedState(greenLed, HIGH); // function call with params
   }
-  delay(delayTime);
 }
 
 // Sets led state
@@ -27,7 +24,7 @@ void loop()
 // state	the state to set
 void setLedState (int led, int state) 
 {
-	digitalWrite(led, state);
+	digitalWrite(led, state); // write value to led pin
 }
 
 // returns true when button is pressed
@@ -35,10 +32,10 @@ void setLedState (int led, int state)
 // button	the button to check
 boolean isButtonPressed(int button) 
 {
-  	int buttonState = digitalRead(leftButton);
-	if (buttonState != LOW) 
+  	// check the return value of digitalRead
+  	if (digitalRead(leftButton)) 
     {
-      return false;
+      return false; // if button is not depressed
     }
-  return true;
+  return true; // if button is depressed
 }
