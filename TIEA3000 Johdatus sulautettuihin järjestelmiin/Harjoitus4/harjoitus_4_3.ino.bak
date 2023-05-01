@@ -1,0 +1,116 @@
+#include <EEPROM.h>
+
+volatile int currentMemoryLocation = 0;
+int rightButton = 2;
+int leftButton = 3;
+int tempSensorPin = A0;
+boolean isValues = false;
+unsigned long previousMillis = 0;
+unsigned long interval = 5000;
+float previousADC = 0.0;
+int memorySize = EEPROM.length();
+
+// Define a Datapoint object for storing measurement data
+struct DataPoint {
+  int time;
+  float value;
+};
+
+// Get the size of the structure to use it in the control structures
+int dataPointSize = sizeof(DataPoint);
+DataPoint data;
+
+void setup() {
+  Serial.begin(9600);
+  attachInterrupt(digitalPinToInterrupt(leftButton), emptyEEPROM, FALLING);
+  attachInterrupt(digitalPinToInterrupt(rightButton), printEEPROM, FALLING);
+}
+
+void loop() {
+  unsigned long currentMillis = millis();
+
+  // True if the interval amount has passed
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;
+    float currentADC = measureAdc(tempSensorPin);
+	
+    // True if temperature has changed
+    if (currentADC != previousADC) {
+      data.time = previousMillis / 1000;
+      data.value = currentADC;
+      writeMeasurements(currentMemoryLocation, data);
+      previousADC = currentADC;
+    }
+  }
+}
+
+// Empty the EEPROM
+void emptyEEPROM() {
+  byte value = 0;
+
+  Serial.println("Tyhjennetään EEPROM...");
+  Serial.flush(); // Flush the Serial buffer to ensure all data is sent
+
+  for (int i = 0; i < memorySize; i++) {
+    // Update the EEPROM with the value 0, only if it's different, ie. != 0
+    EEPROM.update(i, value);
+  }
+  currentMemoryLocation = 0;
+  isValues = false;
+  Serial.println("EPROM on tyhjä.");
+}
+
+// Print the EEPROM
+// Uses a global variables for dataPoint & memorySize.
+void printEEPROM() {
+  Serial.println("Tulostetaan arvot, jos niitä on");
+  Serial.println("--------------------------------");
+
+  bool hasValues = false;
+  for (int i = 0; i <= memorySize - dataPointSize; i += dataPointSize) {
+    DataPoint dataPoint;
+    EEPROM.get(i, dataPoint);
+
+    // dataPoint time is used in control structure, since it won't be 0
+    if (dataPoint.time != 0) {
+      hasValues = true;
+      float avgTemp = ((5 * dataPoint.value / 1024.0) - 0.5) * 100;
+      Serial.println("Muistipaikka: " + String(i) + "    Aika: " + String(dataPoint.time) +
+                      "    ADC: " + String(dataPoint.value) + "    LT: " + String(avgTemp));
+    }
+  }
+
+  if (!hasValues) {
+    Serial.println("Ei arvoja tallennettuna.");
+  }
+
+  Serial.println("--------------------------------");
+}
+
+
+// Measures Adc from sensor
+// Parameters:
+// sensorPine	The sensor pin
+// Returns readings from sensor
+int measureAdc(int sensorPin) {
+  int adcReadings = 0;
+  adcReadings = analogRead(tempSensorPin);
+  return adcReadings;
+}
+
+// Write to EEPROM
+// If memory is full, then start over from location 0. 
+// Uses a global variables for dataPoint & memorySize.
+// parameters:
+// location			the location to write in
+// datapoint		the dataPoint to write
+void writeMeasurements(int location, struct DataPoint dataPoint) {
+    
+  if (location <= memorySize - dataPointSize) {
+    EEPROM.put(location, dataPoint);
+    currentMemoryLocation += dataPointSize;
+  } else {
+    currentMemoryLocation = 0;
+    EEPROM.put(currentMemoryLocation, dataPoint);
+  }
+}

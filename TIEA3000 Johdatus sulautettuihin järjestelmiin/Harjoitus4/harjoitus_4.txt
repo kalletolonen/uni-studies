@@ -1,0 +1,21 @@
+Harjoitus 4
+Kalle Tolonen
+
+1.Arvioi suurin piirtein aika, joka sinulta kului harjoituksen tekemiseen
+Harjoituksen tekemiseen minulla meni useampi ilta, varmaan 8-10 tuntia kaiken kaikkiaan.
+
+2. Kuinka hyvin onnistuit tehtävissä. Jos jokin jäi vaillinaiseksi niin miltä osin?
+Sain kaikki tehtävät tehtyä toimeksiannon mukaisesti. Jäin taas hieman kaipaamaan muuta kuin nettipohjaista IDE-ratkaisua, mutta sellainen on sitten opinnoissa enemmän pakollinen tuote.
+
+3. Mitä opit, mikä oli haasteellista, oliko harjoitustehtävä vaikea (miksi?) vai helppo, olisitko kaivannut
+jotain lisää?
+Opin muistiin kirjoittamisesta, sen tyhjäntämisestä ja käyttämään objekteja Arduinossa. Hyvän aikaa kesti tajuta se, että liukuluku vie enemmän muistia kuin kokonaisluku ja päädyin refaktoroimaan koodia moneen kertaan. Javassa ei esimerkiksi ole vielä tullut tarvetta kontrolloida ihan muistiosoitetasolla sitä, mitä kirjoitetaan, eikä siten ole joutunut miettimään erilaisia tietotyyppejäkään kovin tarkkaan. Suurin osa ajasta meni debuggaamiseen, kun oli alkeellisia ongelmia kontrollirakenteessa, eli sekoitin <= ja < operaattorit lahjakkaasti, enkä siten saanut haluamaani tulosta.
+
+Harjoitus 4.1
+https://www.tinkercad.com/things/d9nh2dH88ux-harjoitus41/editel?sharecode=QGRzhz_GFMzibzjtLJivu3-qXh0ZlPRwTjNo_qclz0w
+
+Harjoitus 4.2
+https://www.tinkercad.com/things/2YmDbH0qVyc-harjoitus42/editel?sharecode=eFPV_nIAjG58csYudgQQdeb1bo_DG1PzzfwMJKZlNng
+
+Harjoitus 4.3
+https://www.tinkercad.com/things/9QAvHhkohVC-harjoitus43/editel?sharecode=M980bUmRqnmlMdctAz81Ke3s6rWNmrSuKx_gjoLqBbU
