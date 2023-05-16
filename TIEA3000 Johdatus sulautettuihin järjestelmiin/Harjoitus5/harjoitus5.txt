@@ -1,0 +1,14 @@
+1. Arvioi suurin piirtein aika, joka sinulta kului harjoituksen tekemiseen
+Käytin harjoitusten tekemiseen 3-4 iltaa, yhteensä noin 12 tuntia. Suurin osa ajasta meni "hukkaan", sillä Arduino Unon pinnit 2-3 ovat keskeytysyhteensopivia ja tajusin sen vasta myöhään. Kakkososiossa on parempi implementaatio myös näytön logiikasta, jolloin sitä ei piirretä turhaan kokoajan uudestaan.
+
+2. Kuinka hyvin onnistuit tehtävissä. Jos jokin jäi vaillinaiseksi niin miltä osin?
+Sain tehtävät 1-2 tehtyä tehtävänannon mukaisesti. Jätin tehtävän 3 tekemättä, sillä nyt täytyy optimoida ajankäyttöä ja keskiarvon pitäisi riittää hyvään arvosanaan myös ilman viimeistä tehtävää. Ratkaisut eivät ole esimerkiksi kytkentöjen suhteen sieltä eleganteimmasta päästä, joten parannettavaa jäi. 
+
+5. Vapaata kommenttia harjoitustyöstä ja tehtävistä
+Harjoitustyöt olivat pääsääntöisesti mielekkäitä - ehkä ilmaisisin vielä entistä selvemmin näistä Arduino-alustan rajoitteista ja pinnien erityyppisyydestä, sekä erilaisten tietotyyppien muistinkäytöstä, koska se oppi menee päähän myös sitä kautta, eikä vain hakkaamalla päätä seinään. Kaikki eivät ole sitkeitä, kun elämässä tulee kitkaa eteen ja minun mielestäni jo pelkkä kurssin suorittaminen on riittävä näyttö motivaatiosta.
+
+Tehtävä 5.1:
+https://www.tinkercad.com/things/3a1W2iEFuzM-harjoitus51/editel?sharecode=oSsGKZVenrc4KJ1OdIGk2gUjeQNPAW8hBg4D2ZLlakA
+
+Tehtävä 5.2:
+https://www.tinkercad.com/things/bRViwZnB7NV-harjoitus52/editel?sharecode=KcyWQKLTbYhvMbfQCpklQ7TQJywRcc6a36wMKLKwfQg
